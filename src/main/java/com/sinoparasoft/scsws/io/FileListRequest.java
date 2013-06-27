@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
  * 文件列表请求
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobOutput")
 public class FileListRequest {

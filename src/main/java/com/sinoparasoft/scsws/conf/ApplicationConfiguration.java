@@ -4,7 +4,6 @@ package com.sinoparasoft.scsws.conf;
  * 应用程序配置抽象类
  * 
  * @author 袁涛
- * @version 1.0
  */
 public abstract class ApplicationConfiguration {
 	/**

@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业软件使用统计请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetSolverWaitQueue")
 public class JobSoftwareStatisticsRequest {

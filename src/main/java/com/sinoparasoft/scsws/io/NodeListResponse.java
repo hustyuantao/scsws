@@ -12,7 +12,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 节点列表响应
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetNodeListResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

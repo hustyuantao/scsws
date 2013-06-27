@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlType;
  * 节点负载类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Data")
 @XmlType(propOrder = { "nodeName", "totalTime", "totalFreeTime", "totalRunTime" })

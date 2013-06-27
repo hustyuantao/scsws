@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业修改请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "ChangeJobPriority")
 public class JobUpdateRequest {

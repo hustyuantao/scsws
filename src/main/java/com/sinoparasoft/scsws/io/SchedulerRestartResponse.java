@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 调度器重启响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "RestartPbsServerServiceResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

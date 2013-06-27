@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 节点信息修改请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "ChangeNodeState")
 public class NodeUpdateRequest {

@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 文件列表响应
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobOutputResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

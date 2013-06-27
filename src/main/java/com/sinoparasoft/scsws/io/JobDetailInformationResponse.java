@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlType;
  * 作业详细信息响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobInformationResult")
 @XmlType(propOrder = { "id", "name", "submitUserName", "groupName",

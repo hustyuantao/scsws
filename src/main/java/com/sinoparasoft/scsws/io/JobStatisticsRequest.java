@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业统计请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobCounter")
 public class JobStatisticsRequest {

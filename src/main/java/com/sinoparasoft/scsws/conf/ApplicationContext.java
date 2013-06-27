@@ -11,7 +11,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * 应用程序上下文配置类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @Configuration
 @EnableWebMvc

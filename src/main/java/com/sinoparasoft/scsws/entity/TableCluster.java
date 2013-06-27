@@ -1,32 +1,15 @@
-package com.sinoparasoft.scsws.io;
+package com.sinoparasoft.scsws.entity;
 
-import javax.xml.bind.annotation.XmlAccessOrder;
-import javax.xml.bind.annotation.XmlAccessorOrder;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import java.sql.Timestamp;
 
 /**
- * 集群统计信息响应类
+ * 数据库表cluster的实体类
  * 
  * @author 袁涛
  */
-@XmlRootElement(name = "GetClusterCounterResult")
-@XmlType(propOrder = { "totalCoresNum", "unknownCoresNum", "downCoresNum",
-		"offlineCoresNum", "onlineCoresNum", "freeCoresNum", "usedCoresNum" })
-@XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)
-public class NodeStatisticsResponse {
+public class TableCluster {
 	/**
-	 * 响应状态
-	 */
-	private Integer exitStatus;
-	/**
-	 * 响应消息
-	 */
-	private String message;
-	/**
-	 * 集群处理器总核数
+	 * 集群总核数
 	 */
 	private Integer totalCoresNum;
 	/**
@@ -53,62 +36,25 @@ public class NodeStatisticsResponse {
 	 * 在线状态节点的占用核数
 	 */
 	private Integer usedCoresNum;
+	/**
+	 * 集群信息更新时间
+	 */
+	private Timestamp modifiedTime;
 
 	/**
-	 * 获取响应状态
+	 * 获取集群总核数
 	 * 
-	 * @return 响应状态
+	 * @return 集群总核数
 	 */
-	@XmlAttribute(name = "ExitStatus")
-	public Integer getExitStatus() {
-		return exitStatus;
-	}
-
-	/**
-	 * 设置响应状态
-	 * 
-	 * @param exitStatus
-	 *            响应状态
-	 */
-	public void setExitStatus(Integer exitStatus) {
-		this.exitStatus = exitStatus;
-	}
-
-	/**
-	 * 获取响应消息
-	 * 
-	 * @return 响应消息
-	 */
-	@XmlAttribute(name = "Message")
-	public String getMessage() {
-		return message;
-	}
-
-	/**
-	 * 设置响应消息
-	 * 
-	 * @param message
-	 *            响应消息
-	 */
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	/**
-	 * 获取集群处理器总核数
-	 * 
-	 * @return 集群处理器总核数
-	 */
-	@XmlElement(name = "TotalCores")
 	public Integer getTotalCoresNum() {
 		return totalCoresNum;
 	}
 
 	/**
-	 * 设置集群处理器总核数
+	 * 设置集群总核数
 	 * 
 	 * @param totalCoresNum
-	 *            集群处理器总核数
+	 *            集群总核数
 	 */
 	public void setTotalCoresNum(Integer totalCoresNum) {
 		this.totalCoresNum = totalCoresNum;
@@ -119,7 +65,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 不明状态节点的核数
 	 */
-	@XmlElement(name = "UnknownCores")
 	public Integer getUnknownCoresNum() {
 		return unknownCoresNum;
 	}
@@ -139,7 +84,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 关机状态节点的核数
 	 */
-	@XmlElement(name = "DownCores")
 	public Integer getDownCoresNum() {
 		return downCoresNum;
 	}
@@ -159,7 +103,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 离线状态节点的核数
 	 */
-	@XmlElement(name = "OfflineCores")
 	public Integer getOfflineCoresNum() {
 		return offlineCoresNum;
 	}
@@ -179,7 +122,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 在线状态节点的核数
 	 */
-	@XmlElement(name = "OnlineCores")
 	public Integer getOnlineCoresNum() {
 		return onlineCoresNum;
 	}
@@ -199,7 +141,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 在线状态节点的空闲核数
 	 */
-	@XmlElement(name = "FreeCores")
 	public Integer getFreeCoresNum() {
 		return freeCoresNum;
 	}
@@ -219,7 +160,6 @@ public class NodeStatisticsResponse {
 	 * 
 	 * @return 在线状态节点的占用核数
 	 */
-	@XmlElement(name = "UsedCores")
 	public Integer getUsedCoresNum() {
 		return usedCoresNum;
 	}
@@ -232,5 +172,24 @@ public class NodeStatisticsResponse {
 	 */
 	public void setUsedCoresNum(Integer usedCoresNum) {
 		this.usedCoresNum = usedCoresNum;
+	}
+
+	/**
+	 * 获取集群信息更新时间
+	 * 
+	 * @return 集群信息更新时间
+	 */
+	public Timestamp getModifiedTime() {
+		return modifiedTime;
+	}
+
+	/**
+	 * 设置集群信息更新时间
+	 * 
+	 * @param modifiedTime
+	 *            集群信息更新时间
+	 */
+	public void setModifiedTime(Timestamp modifiedTime) {
+		this.modifiedTime = modifiedTime;
 	}
 }

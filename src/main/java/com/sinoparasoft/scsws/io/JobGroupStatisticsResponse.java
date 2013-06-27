@@ -12,7 +12,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业分组统计响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetSoftwareResourceUsageSummaryResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

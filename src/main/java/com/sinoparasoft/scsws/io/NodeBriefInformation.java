@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlType;
  * 节点简略信息类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Node")
 @XmlType(propOrder = { "name", "state", "coresNum", "cpuFrequency", "cpuLoad",

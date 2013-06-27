@@ -12,7 +12,6 @@ import org.apache.log4j.Logger;
  * 应用程序属性文件配置类
  * 
  * @author 袁涛
- * @version 1.0
  */
 public class PropertyConfiguration extends ApplicationConfiguration {
 	private static Logger logger = Logger

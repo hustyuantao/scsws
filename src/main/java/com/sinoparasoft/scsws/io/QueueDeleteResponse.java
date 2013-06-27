@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 队列删除响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "DeleteQueueResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

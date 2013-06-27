@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 队列创建响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "CreateQueueResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)

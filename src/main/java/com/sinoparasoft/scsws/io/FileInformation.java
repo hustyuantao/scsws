@@ -12,7 +12,6 @@ import javax.xml.bind.annotation.XmlType;
  * 文件信息
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Item")
 @XmlType(propOrder = { "name", "type", "length", "lastModifiedTime", "path",

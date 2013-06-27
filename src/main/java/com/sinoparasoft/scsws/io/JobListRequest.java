@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业列表请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobList")
 public class JobListRequest {

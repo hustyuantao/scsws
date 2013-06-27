@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlType;
  * 作业统计响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetJobCounterResult")
 @XmlType(propOrder = { "queuedJobNum", "runningJobNum", "finishedJobNum",

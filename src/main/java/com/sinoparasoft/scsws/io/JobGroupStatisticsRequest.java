@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业分组统计视图请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetSoftwareResourceUsageSummary")
 public class JobGroupStatisticsRequest {

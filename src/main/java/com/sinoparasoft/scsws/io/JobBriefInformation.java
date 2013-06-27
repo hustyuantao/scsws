@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlType;
  * 作业简略信息
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Job")
 @XmlType(propOrder = { "id", "name", "userName", "state", "priority",

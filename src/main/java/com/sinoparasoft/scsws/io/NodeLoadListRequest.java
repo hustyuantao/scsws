@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 集群负载请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetClusterNodeUseTime")
 public class NodeLoadListRequest {

@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 队列创建请求类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "CreateQueue")
 public class QueueCreateRequest {

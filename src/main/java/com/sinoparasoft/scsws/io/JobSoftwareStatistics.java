@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlType;
  * 作业软件使用统计类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Data")
 @XmlType(propOrder = { "softwareName", "totalUsedTime", "totalCpuTime",

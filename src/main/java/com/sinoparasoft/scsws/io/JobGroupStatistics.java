@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlType;
  * 作业分组统计
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "Data")
 @XmlType(propOrder = { "groupValue", "softwareName", "totalJobNum",

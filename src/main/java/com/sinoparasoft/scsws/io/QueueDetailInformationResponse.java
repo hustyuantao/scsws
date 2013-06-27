@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlType;
  * 队列详细信息响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "GetQueueInformationResult")
 @XmlType(propOrder = { "name", "type", "enabled", "started", "specified",

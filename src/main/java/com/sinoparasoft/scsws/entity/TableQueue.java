@@ -1,18 +1,11 @@
-package com.sinoparasoft.scsws.io;
-
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+package com.sinoparasoft.scsws.entity;
 
 /**
- * 队列简略信息类
+ * 数据库表queue的实体类
  * 
  * @author 袁涛
  */
-@XmlRootElement(name = "Queue")
-@XmlType(propOrder = { "name", "type", "enabled", "started", "specified",
-		"nodeList" })
-public class QueueBriefInformation {
+public class TableQueue {
 	/**
 	 * 队列名称
 	 */
@@ -22,19 +15,19 @@ public class QueueBriefInformation {
 	 */
 	private String type;
 	/**
-	 * 是否可用
+	 * 队列使能
 	 */
-	private Integer enabled;
+	private Boolean enabled;
 	/**
-	 * 是否开始
+	 * 队列开关
 	 */
-	private Integer started;
+	private Boolean started;
 	/**
-	 * 是否显示指明队列和节点的映射关系
+	 * 队列是否指定节点
 	 */
-	private Integer specified;
+	private Boolean specified;
 	/**
-	 * 节点名称列表
+	 * 队列节点列表
 	 */
 	private String nodeList;
 
@@ -43,7 +36,6 @@ public class QueueBriefInformation {
 	 * 
 	 * @return 队列名称
 	 */
-	@XmlElement(name = "Name")
 	public String getName() {
 		return name;
 	}
@@ -63,7 +55,6 @@ public class QueueBriefInformation {
 	 * 
 	 * @return 队列类型
 	 */
-	@XmlElement(name = "Type")
 	public String getType() {
 		return type;
 	}
@@ -79,80 +70,76 @@ public class QueueBriefInformation {
 	}
 
 	/**
-	 * 是否可用
+	 * 获取队列使能
 	 * 
 	 * @return 是或否
 	 */
-	@XmlElement(name = "Enabled")
-	public Integer getEnabled() {
+	public Boolean getEnabled() {
 		return enabled;
 	}
 
 	/**
-	 * 设置是否可用
+	 * 设置队列使能
 	 * 
 	 * @param enabled
 	 *            是或否
 	 */
-	public void setEnabled(Integer enabled) {
+	public void setEnabled(Boolean enabled) {
 		this.enabled = enabled;
 	}
 
 	/**
-	 * 是否开始
+	 * 获取队列开关
 	 * 
 	 * @return 是或否
 	 */
-	@XmlElement(name = "Started")
-	public Integer getStarted() {
+	public Boolean getStarted() {
 		return started;
 	}
 
 	/**
-	 * 设置是否开始
+	 * 设置是或否
 	 * 
 	 * @param started
 	 *            是或否
 	 */
-	public void setStarted(Integer started) {
+	public void setStarted(Boolean started) {
 		this.started = started;
 	}
 
 	/**
-	 * 是否显示指明队列和节点的映射关系
+	 * 获取队列是否指定节点
 	 * 
 	 * @return 是或否
 	 */
-	@XmlElement(name = "ExplicitlySpecifyNode")
-	public Integer getSpecified() {
+	public Boolean getSpecified() {
 		return specified;
 	}
 
 	/**
-	 * 设置是否显示指明队列和节点的映射关系
+	 * 设置队列是否指定节点
 	 * 
 	 * @param specified
 	 *            是或否
 	 */
-	public void setSpecified(Integer specified) {
+	public void setSpecified(Boolean specified) {
 		this.specified = specified;
 	}
 
 	/**
-	 * 获取节点名称列表
+	 * 获取队列节点列表
 	 * 
-	 * @return 节点名称列表
+	 * @return 队列节点列表
 	 */
-	@XmlElement(name = "Nodes")
 	public String getNodeList() {
 		return nodeList;
 	}
 
 	/**
-	 * 设置节点名称列表
+	 * 设置队列节点列表
 	 * 
 	 * @param nodeList
-	 *            节点名称列表
+	 *            队列节点列表
 	 */
 	public void setNodeList(String nodeList) {
 		this.nodeList = nodeList;

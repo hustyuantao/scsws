@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 作业取消响应类
  * 
  * @author 袁涛
- * @version 1.0
  */
 @XmlRootElement(name = "CancelJobResult")
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)
