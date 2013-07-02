@@ -303,6 +303,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置报告时间
+	 * 
+	 * @param reportedTime
+	 *            报告时间
+	 */
+	public void setReportedTime(String reportedTime) {
+		if (reportedTime != null && reportedTime.isEmpty() == false) {
+			this.reportedTime = new Date(1000 * Long.parseLong(reportedTime));
+		}
+	}
+
+	/**
 	 * 获取主机GMOND开始时间
 	 * 
 	 * @return 主机GMOND开始时间
@@ -319,6 +331,19 @@ public class NodeMetric {
 	 */
 	public void setGmondStartedTime(Date gmondStartedTime) {
 		this.gmondStartedTime = gmondStartedTime;
+	}
+
+	/**
+	 * 设置主机GMOND开始时间
+	 * 
+	 * @param gmondStartedTime
+	 *            主机GMOND开始时间
+	 */
+	public void setGmondStartedTime(String gmondStartedTime) {
+		if (gmondStartedTime != null && gmondStartedTime.isEmpty() == false) {
+			this.gmondStartedTime = new Date(
+					1000 * Long.parseLong(gmondStartedTime));
+		}
 	}
 
 	/**
@@ -379,6 +404,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置最后一次系统启动时间
+	 * 
+	 * @param lastBootTime
+	 *            最后一次系统启动时间
+	 */
+	public void setLastBootTime(String lastBootTime) {
+		if (lastBootTime != null && lastBootTime.isEmpty() == false) {
+			this.lastBootTime = new Date(1000 * Long.parseLong(lastBootTime));
+		}
+	}
+
+	/**
 	 * 获取主机系统架构
 	 * 
 	 * @return 主机系统架构
@@ -417,6 +454,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置一分钟内平均负载
+	 * 
+	 * @param avgOneMinuteLoad
+	 *            一分钟内平均负载
+	 */
+	public void setAvgOneMinuteLoad(String avgOneMinuteLoad) {
+		if (avgOneMinuteLoad != null && avgOneMinuteLoad.isEmpty() == false) {
+			this.avgOneMinuteLoad = Float.parseFloat(avgOneMinuteLoad);
+		}
+	}
+
+	/**
 	 * 获取五分钟内平均负载
 	 * 
 	 * @return 五分钟内平均负载
@@ -433,6 +482,18 @@ public class NodeMetric {
 	 */
 	public void setAvgFiveMinuteLoad(Float avgFiveMinuteLoad) {
 		this.avgFiveMinuteLoad = avgFiveMinuteLoad;
+	}
+
+	/**
+	 * 设置五分钟内平均负载
+	 * 
+	 * @param avgFiveMinuteLoad
+	 *            五分钟内平均负载
+	 */
+	public void setAvgFiveMinuteLoad(String avgFiveMinuteLoad) {
+		if (avgFiveMinuteLoad != null && avgFiveMinuteLoad.isEmpty() == false) {
+			this.avgFiveMinuteLoad = Float.parseFloat(avgFiveMinuteLoad);
+		}
 	}
 
 	/**
@@ -455,6 +516,19 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置十五分钟内平均负载
+	 * 
+	 * @param avgFifteenMinuteLoad
+	 *            十五分钟内平均负载
+	 */
+	public void setAvgFifteenMinuteLoad(String avgFifteenMinuteLoad) {
+		if (avgFifteenMinuteLoad != null
+				&& avgFifteenMinuteLoad.isEmpty() == false) {
+			this.avgFifteenMinuteLoad = Float.parseFloat(avgFifteenMinuteLoad);
+		}
+	}
+
+	/**
 	 * 获取总内存大小，单位：KB
 	 * 
 	 * @return 总内存大小，单位：KB
@@ -471,6 +545,18 @@ public class NodeMetric {
 	 */
 	public void setTotalMemorySize(Float totalMemorySize) {
 		this.totalMemorySize = totalMemorySize;
+	}
+
+	/**
+	 * 设置总内存大小，单位：KB
+	 * 
+	 * @param totalMemorySize
+	 *            总内存大小，单位：KB
+	 */
+	public void setTotalMemorySize(String totalMemorySize) {
+		if (totalMemorySize != null && totalMemorySize.isEmpty() == false) {
+			this.totalMemorySize = Float.parseFloat(totalMemorySize);
+		}
 	}
 
 	/**
@@ -493,6 +579,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置空闲内存大小
+	 * 
+	 * @param freeMemorySize
+	 *            空闲内存大小
+	 */
+	public void setFreeMemorySize(String freeMemorySize) {
+		if (freeMemorySize != null && freeMemorySize.isEmpty() == false) {
+			this.freeMemorySize = Float.parseFloat(freeMemorySize);
+		}
+	}
+
+	/**
 	 * 获取cached内存大小
 	 * 
 	 * @return cached内存大小
@@ -509,6 +607,18 @@ public class NodeMetric {
 	 */
 	public void setCachedMemorySize(Float cachedMemorySize) {
 		this.cachedMemorySize = cachedMemorySize;
+	}
+
+	/**
+	 * 设置cached内存大小
+	 * 
+	 * @param cachedMemorySize
+	 *            cached内存大小
+	 */
+	public void setCachedMemorySize(String cachedMemorySize) {
+		if (cachedMemorySize != null && cachedMemorySize.isEmpty() == false) {
+			this.cachedMemorySize = Float.parseFloat(cachedMemorySize);
+		}
 	}
 
 	/**
@@ -531,6 +641,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置buffered内存大小
+	 * 
+	 * @param bufferedMemorySize
+	 *            buffered内存大小
+	 */
+	public void setBufferedMemorySize(String bufferedMemorySize) {
+		if (bufferedMemorySize != null && bufferedMemorySize.isEmpty() == false) {
+			this.bufferedMemorySize = Float.parseFloat(bufferedMemorySize);
+		}
+	}
+
+	/**
 	 * 获取共享内存大小
 	 * 
 	 * @return 共享内存大小
@@ -547,6 +669,18 @@ public class NodeMetric {
 	 */
 	public void setSharedMemorySize(Float sharedMemorySize) {
 		this.sharedMemorySize = sharedMemorySize;
+	}
+
+	/**
+	 * 设置共享内存大小
+	 * 
+	 * @param sharedMemorySize
+	 *            共享内存大小
+	 */
+	public void setSharedMemorySize(String sharedMemorySize) {
+		if (sharedMemorySize != null && sharedMemorySize.isEmpty() == false) {
+			this.sharedMemorySize = Float.parseFloat(sharedMemorySize);
+		}
 	}
 
 	/**
@@ -569,6 +703,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置交换分区总大小，单位： KB
+	 * 
+	 * @param totalSwapSize
+	 *            交换分区总大小，单位： KB
+	 */
+	public void setTotalSwapSize(String totalSwapSize) {
+		if (totalSwapSize != null && totalSwapSize.isEmpty() == false) {
+			this.totalSwapSize = Float.parseFloat(totalSwapSize);
+		}
+	}
+
+	/**
 	 * 获取可用交换分区大小，单位：KB
 	 * 
 	 * @return 可用交换分区大小，单位：KB
@@ -585,6 +731,18 @@ public class NodeMetric {
 	 */
 	public void setFreeSwapSize(Float freeSwapSize) {
 		this.freeSwapSize = freeSwapSize;
+	}
+
+	/**
+	 * 设置可用交换分区大小，单位：KB
+	 * 
+	 * @param freeSwapSize
+	 *            可用交换分区大小，单位：KB
+	 */
+	public void setFreeSwapSize(String freeSwapSize) {
+		if (freeSwapSize != null && freeSwapSize.isEmpty() == false) {
+			this.freeSwapSize = Float.parseFloat(freeSwapSize);
+		}
 	}
 
 	/**
@@ -607,6 +765,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置总进程数
+	 * 
+	 * @param totalProcessesNum
+	 *            总进程数
+	 */
+	public void setTotalProcessesNum(String totalProcessesNum) {
+		if (totalProcessesNum != null && totalProcessesNum.isEmpty() == false) {
+			this.totalProcessesNum = Integer.parseInt(totalProcessesNum);
+		}
+	}
+
+	/**
 	 * 获取正在运行进程总数
 	 * 
 	 * @return 正在运行进程总数
@@ -623,6 +793,19 @@ public class NodeMetric {
 	 */
 	public void setRunningProcessesNum(Integer runningProcessesNum) {
 		this.runningProcessesNum = runningProcessesNum;
+	}
+
+	/**
+	 * 设置正在运行进程总数
+	 * 
+	 * @param runningProcessesNum
+	 *            正在运行进程总数
+	 */
+	public void setRunningProcessesNum(String runningProcessesNum) {
+		if (runningProcessesNum != null
+				&& runningProcessesNum.isEmpty() == false) {
+			this.runningProcessesNum = Integer.parseInt(runningProcessesNum);
+		}
 	}
 
 	/**
@@ -645,6 +828,22 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置系统Gexec状态
+	 * 
+	 * @param gexecAvailable
+	 *            系统Gexec状态
+	 */
+	public void setGexecAvailable(String gexecAvailable) {
+		if (gexecAvailable != null && gexecAvailable.isEmpty() == false) {
+			if (gexecAvailable.equals("OFF")) {
+				this.gexecAvailable = false;
+			} else {
+				this.gexecAvailable = true;
+			}
+		}
+	}
+
+	/**
 	 * 获取硬盘空间总大小
 	 * 
 	 * @return 硬盘空间总大小
@@ -661,6 +860,18 @@ public class NodeMetric {
 	 */
 	public void setTotalDiskSize(Float totalDiskSize) {
 		this.totalDiskSize = totalDiskSize;
+	}
+
+	/**
+	 * 设置硬盘空间总大小
+	 * 
+	 * @param totalDiskSize
+	 *            硬盘空间总大小
+	 */
+	public void setTotalDiskSize(String totalDiskSize) {
+		if (totalDiskSize != null && totalDiskSize.isEmpty() == false) {
+			this.totalDiskSize = Float.parseFloat(totalDiskSize);
+		}
 	}
 
 	/**
@@ -683,6 +894,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置硬盘空闲空间大小
+	 * 
+	 * @param freeDiskSize
+	 *            硬盘空闲空间大小
+	 */
+	public void setFreeDiskSize(String freeDiskSize) {
+		if (freeDiskSize != null && freeDiskSize.isEmpty() == false) {
+			this.freeDiskSize = Float.parseFloat(freeDiskSize);
+		}
+	}
+
+	/**
 	 * 获取硬盘所有分区最大使用百分比
 	 * 
 	 * @return 硬盘所有分区最大使用百分比
@@ -699,6 +922,20 @@ public class NodeMetric {
 	 */
 	public void setMaxUsedDiskSpacePercent(Float maxUsedDiskSpacePercent) {
 		this.maxUsedDiskSpacePercent = maxUsedDiskSpacePercent;
+	}
+
+	/**
+	 * 设置硬盘所有分区最大使用百分比
+	 * 
+	 * @param maxUsedDiskSpacePercent
+	 *            硬盘所有分区最大使用百分比
+	 */
+	public void setMaxUsedDiskSpacePercent(String maxUsedDiskSpacePercent) {
+		if (maxUsedDiskSpacePercent != null
+				&& maxUsedDiskSpacePercent.isEmpty() == false) {
+			this.maxUsedDiskSpacePercent = Float
+					.parseFloat(maxUsedDiskSpacePercent);
+		}
 	}
 
 	/**
@@ -759,6 +996,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置CPU空闲百分比
+	 * 
+	 * @param cpuIdlePercent
+	 *            CPU空闲百分比
+	 */
+	public void setCpuIdlePercent(String cpuIdlePercent) {
+		if (cpuIdlePercent != null && cpuIdlePercent.isEmpty() == false) {
+			this.cpuIdlePercent = Float.parseFloat(cpuIdlePercent);
+		}
+	}
+
+	/**
 	 * 获取CPU Nice百分比
 	 * 
 	 * @return CPU Nice百分比
@@ -775,6 +1024,18 @@ public class NodeMetric {
 	 */
 	public void setCpuNicePercent(Float cpuNicePercent) {
 		this.cpuNicePercent = cpuNicePercent;
+	}
+
+	/**
+	 * 设置CPU Nice百分比
+	 * 
+	 * @param cpuNicePercent
+	 *            CPU Nice百分比
+	 */
+	public void setCpuNicePercent(String cpuNicePercent) {
+		if (cpuNicePercent != null && cpuNicePercent.isEmpty() == false) {
+			this.cpuNicePercent = Float.parseFloat(cpuNicePercent);
+		}
 	}
 
 	/**
@@ -797,6 +1058,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置CPU用户百分比
+	 * 
+	 * @param cpuUserPercent
+	 *            CPU用户百分比
+	 */
+	public void setCpuUserPercent(String cpuUserPercent) {
+		if (cpuUserPercent != null && cpuUserPercent.isEmpty() == false) {
+			this.cpuUserPercent = Float.parseFloat(cpuUserPercent);
+		}
+	}
+
+	/**
 	 * 获取CPU Aidle百分比
 	 * 
 	 * @return CPU Aidle百分比
@@ -813,6 +1086,18 @@ public class NodeMetric {
 	 */
 	public void setCpuAidlePercent(Float cpuAidlePercent) {
 		this.cpuAidlePercent = cpuAidlePercent;
+	}
+
+	/**
+	 * 设置CPU Aidle百分比
+	 * 
+	 * @param cpuAidlePercent
+	 *            CPU Aidle百分比
+	 */
+	public void setCpuAidlePercent(String cpuAidlePercent) {
+		if (cpuAidlePercent != null && cpuAidlePercent.isEmpty() == false) {
+			this.cpuAidlePercent = Float.parseFloat(cpuAidlePercent);
+		}
 	}
 
 	/**
@@ -835,6 +1120,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置CPU系统百分比
+	 * 
+	 * @param cpuSystemPercent
+	 *            CPU系统百分比
+	 */
+	public void setCpuSystemPercent(String cpuSystemPercent) {
+		if (cpuSystemPercent != null && cpuSystemPercent.isEmpty() == false) {
+			this.cpuSystemPercent = Float.parseFloat(cpuSystemPercent);
+		}
+	}
+
+	/**
 	 * 获取CPU Wio百分比
 	 * 
 	 * @return CPU Wio百分比
@@ -851,6 +1148,18 @@ public class NodeMetric {
 	 */
 	public void setCpuWioPercent(Float cpuWioPercent) {
 		this.cpuWioPercent = cpuWioPercent;
+	}
+
+	/**
+	 * 设置CPU Wio百分比
+	 * 
+	 * @param cpuWioPercent
+	 *            CPU Wio百分比
+	 */
+	public void setCpuWioPercent(String cpuWioPercent) {
+		if (cpuWioPercent != null && cpuWioPercent.isEmpty() == false) {
+			this.cpuWioPercent = Float.parseFloat(cpuWioPercent);
+		}
 	}
 
 	/**
@@ -873,6 +1182,18 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置CPU个数
+	 * 
+	 * @param cpuNum
+	 *            CPU个数
+	 */
+	public void setCpuNum(String cpuNum) {
+		if (cpuNum != null && cpuNum.isEmpty() == false) {
+			this.cpuNum = Integer.parseInt(cpuNum);
+		}
+	}
+
+	/**
 	 * 获取CPU频率，单位：MHz
 	 * 
 	 * @return CPU频率，单位：MHz
@@ -889,6 +1210,18 @@ public class NodeMetric {
 	 */
 	public void setCpuFrequency(Integer cpuFrequency) {
 		this.cpuFrequency = cpuFrequency;
+	}
+
+	/**
+	 * 设置CPU频率，单位：MHz
+	 * 
+	 * @param cpuFrequency
+	 *            CPU频率，单位：MHz
+	 */
+	public void setCpuFrequency(String cpuFrequency) {
+		if (cpuFrequency != null && cpuFrequency.isEmpty() == false) {
+			this.cpuFrequency = Integer.parseInt(cpuFrequency);
+		}
 	}
 
 	/**
@@ -912,6 +1245,21 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连结建立总数
+	 * 
+	 * @param establishedTcpConnectionsNum
+	 *            TCP连结建立总数
+	 */
+	public void setEstablishedTcpConnectionsNum(
+			String establishedTcpConnectionsNum) {
+		if (establishedTcpConnectionsNum != null
+				&& establishedTcpConnectionsNum.isEmpty() == false) {
+			this.establishedTcpConnectionsNum = Integer
+					.parseInt(establishedTcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连结监听总数
 	 * 
 	 * @return TCP连结监听总数
@@ -928,6 +1276,20 @@ public class NodeMetric {
 	 */
 	public void setListeningTcpConnectionsNum(Integer listeningTcpConnectionsNum) {
 		this.listeningTcpConnectionsNum = listeningTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连结监听总数
+	 * 
+	 * @param listeningTcpConnectionsNum
+	 *            TCP连结监听总数
+	 */
+	public void setListeningTcpConnectionsNum(String listeningTcpConnectionsNum) {
+		if (listeningTcpConnectionsNum != null
+				&& listeningTcpConnectionsNum.isEmpty() == false) {
+			this.listeningTcpConnectionsNum = Integer
+					.parseInt(listeningTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -950,6 +1312,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接阻塞等待总数
+	 * 
+	 * @param syncWaitTcpConnectionsNum
+	 *            TCP连接阻塞等待总数
+	 */
+	public void setSyncWaitTcpConnectionsNum(String syncWaitTcpConnectionsNum) {
+		if (syncWaitTcpConnectionsNum != null
+				&& syncWaitTcpConnectionsNum.isEmpty() == false) {
+			this.syncWaitTcpConnectionsNum = Integer
+					.parseInt(syncWaitTcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连接阻塞发送总数
 	 * 
 	 * @return TCP连接阻塞发送总数
@@ -966,6 +1342,20 @@ public class NodeMetric {
 	 */
 	public void setSyncSentTcpConnectionsNum(Integer syncSentTcpConnectionsNum) {
 		this.syncSentTcpConnectionsNum = syncSentTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连接阻塞发送总数
+	 * 
+	 * @param syncSentTcpConnectionsNum
+	 *            TCP连接阻塞发送总数
+	 */
+	public void setSyncSentTcpConnectionsNum(String syncSentTcpConnectionsNum) {
+		if (syncSentTcpConnectionsNum != null
+				&& syncSentTcpConnectionsNum.isEmpty() == false) {
+			this.syncSentTcpConnectionsNum = Integer
+					.parseInt(syncSentTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -988,6 +1378,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接阻塞接收总数
+	 * 
+	 * @param syncRecvTcpConnectionsNum
+	 *            TCP连接阻塞接收总数
+	 */
+	public void setSyncRecvTcpConnectionsNum(String syncRecvTcpConnectionsNum) {
+		if (syncRecvTcpConnectionsNum != null
+				&& syncRecvTcpConnectionsNum.isEmpty() == false) {
+			this.syncRecvTcpConnectionsNum = Integer
+					.parseInt(syncRecvTcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连接last_ack总数
 	 * 
 	 * @return TCP连接last_ack总数
@@ -1004,6 +1408,20 @@ public class NodeMetric {
 	 */
 	public void setLastAckTcpConnectionsNum(Integer lastAckTcpConnectionsNum) {
 		this.lastAckTcpConnectionsNum = lastAckTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连接last_ack总数
+	 * 
+	 * @param lastAckTcpConnectionsNum
+	 *            TCP连接last_ack总数
+	 */
+	public void setLastAckTcpConnectionsNum(String lastAckTcpConnectionsNum) {
+		if (lastAckTcpConnectionsNum != null
+				&& lastAckTcpConnectionsNum.isEmpty() == false) {
+			this.lastAckTcpConnectionsNum = Integer
+					.parseInt(lastAckTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -1026,6 +1444,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接fin_wait1总数
+	 * 
+	 * @param finWait1TcpConnectionsNum
+	 *            TCP连接fin_wait1总数
+	 */
+	public void setFinWait1TcpConnectionsNum(String finWait1TcpConnectionsNum) {
+		if (finWait1TcpConnectionsNum != null
+				&& finWait1TcpConnectionsNum.isEmpty() == false) {
+			this.finWait1TcpConnectionsNum = Integer
+					.parseInt(finWait1TcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连接time_wait总数
 	 * 
 	 * @return TCP连接time_wait总数
@@ -1042,6 +1474,20 @@ public class NodeMetric {
 	 */
 	public void setTimeWaitTcpConnectionsNum(Integer timeWaitTcpConnectionsNum) {
 		this.timeWaitTcpConnectionsNum = timeWaitTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连接time_wait总数
+	 * 
+	 * @param timeWaitTcpConnectionsNum
+	 *            TCP连接time_wait总数
+	 */
+	public void setTimeWaitTcpConnectionsNum(String timeWaitTcpConnectionsNum) {
+		if (timeWaitTcpConnectionsNum != null
+				&& timeWaitTcpConnectionsNum.isEmpty() == false) {
+			this.timeWaitTcpConnectionsNum = Integer
+					.parseInt(timeWaitTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -1064,6 +1510,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接fin_wait2总数
+	 * 
+	 * @param finWait2TcpConnectionsNum
+	 *            TCP连接fin_wait2总数
+	 */
+	public void setFinWait2TcpConnectionsNum(String finWait2TcpConnectionsNum) {
+		if (finWait2TcpConnectionsNum != null
+				&& finWait2TcpConnectionsNum.isEmpty() == false) {
+			this.finWait2TcpConnectionsNum = Integer
+					.parseInt(finWait2TcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连接close_wait总数
 	 * 
 	 * @return TCP连接close_wait总数
@@ -1080,6 +1540,20 @@ public class NodeMetric {
 	 */
 	public void setCloseWaitTcpConnectionsNum(Integer closeWaitTcpConnectionsNum) {
 		this.closeWaitTcpConnectionsNum = closeWaitTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连接close_wait总数
+	 * 
+	 * @param closeWaitTcpConnectionsNum
+	 *            TCP连接close_wait总数
+	 */
+	public void setCloseWaitTcpConnectionsNum(String closeWaitTcpConnectionsNum) {
+		if (closeWaitTcpConnectionsNum != null
+				&& closeWaitTcpConnectionsNum.isEmpty() == false) {
+			this.closeWaitTcpConnectionsNum = Integer
+					.parseInt(closeWaitTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -1102,6 +1576,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接正在关闭总数
+	 * 
+	 * @param closingTcpConnectionsNum
+	 *            TCP连接正在关闭总数
+	 */
+	public void setClosingTcpConnectionsNum(String closingTcpConnectionsNum) {
+		if (closingTcpConnectionsNum != null
+				&& closingTcpConnectionsNum.isEmpty() == false) {
+			this.closingTcpConnectionsNum = Integer
+					.parseInt(closingTcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取TCP连接已关闭总数
 	 * 
 	 * @return TCP连接已关闭总数
@@ -1118,6 +1606,20 @@ public class NodeMetric {
 	 */
 	public void setClosedTcpConnectionsNum(Integer closedTcpConnectionsNum) {
 		this.closedTcpConnectionsNum = closedTcpConnectionsNum;
+	}
+
+	/**
+	 * 设置TCP连接已关闭总数
+	 * 
+	 * @param closedTcpConnectionsNum
+	 *            TCP连接已关闭总数
+	 */
+	public void setClosedTcpConnectionsNum(String closedTcpConnectionsNum) {
+		if (closedTcpConnectionsNum != null
+				&& closedTcpConnectionsNum.isEmpty() == false) {
+			this.closedTcpConnectionsNum = Integer
+					.parseInt(closedTcpConnectionsNum);
+		}
 	}
 
 	/**
@@ -1140,6 +1642,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置TCP连接未知状态总数
+	 * 
+	 * @param unknownTcpConnectionsNum
+	 *            TCP连接未知状态总数
+	 */
+	public void setUnknownTcpConnectionsNum(String unknownTcpConnectionsNum) {
+		if (unknownTcpConnectionsNum != null
+				&& unknownTcpConnectionsNum.isEmpty() == false) {
+			this.unknownTcpConnectionsNum = Integer
+					.parseInt(unknownTcpConnectionsNum);
+		}
+	}
+
+	/**
 	 * 获取每秒接收数据包数
 	 * 
 	 * @return 每秒接收数据包数
@@ -1156,6 +1672,20 @@ public class NodeMetric {
 	 */
 	public void setReceivedPacketsPerSecond(Float receivedPacketsPerSecond) {
 		this.receivedPacketsPerSecond = receivedPacketsPerSecond;
+	}
+
+	/**
+	 * 设置每秒接收数据包数
+	 * 
+	 * @param receivedPacketsPerSecond
+	 *            每秒接收数据包数
+	 */
+	public void setReceivedPacketsPerSecond(String receivedPacketsPerSecond) {
+		if (receivedPacketsPerSecond != null
+				&& receivedPacketsPerSecond.isEmpty() == false) {
+			this.receivedPacketsPerSecond = Float
+					.parseFloat(receivedPacketsPerSecond);
+		}
 	}
 
 	/**
@@ -1178,6 +1708,19 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置每秒发送数据包数
+	 * 
+	 * @param sentPacketsPerSecond
+	 *            每秒发送数据包数
+	 */
+	public void setSentPacketsPerSecond(String sentPacketsPerSecond) {
+		if (sentPacketsPerSecond != null
+				&& sentPacketsPerSecond.isEmpty() == false) {
+			this.sentPacketsPerSecond = Float.parseFloat(sentPacketsPerSecond);
+		}
+	}
+
+	/**
 	 * 获取每秒接收字节数
 	 * 
 	 * @return 每秒接收字节数
@@ -1197,6 +1740,20 @@ public class NodeMetric {
 	}
 
 	/**
+	 * 设置每秒接收字节数
+	 * 
+	 * @param receivedBytesPerSecond
+	 *            每秒接收字节数
+	 */
+	public void setReceivedBytesPerSecond(String receivedBytesPerSecond) {
+		if (receivedBytesPerSecond != null
+				&& receivedBytesPerSecond.isEmpty() == false) {
+			this.receivedBytesPerSecond = Float
+					.parseFloat(receivedBytesPerSecond);
+		}
+	}
+
+	/**
 	 * 获取每秒发送字节数
 	 * 
 	 * @return 每秒发送字节数
@@ -1213,5 +1770,17 @@ public class NodeMetric {
 	 */
 	public void setSentBytesPerSecond(Float sentBytesPerSecond) {
 		this.sentBytesPerSecond = sentBytesPerSecond;
+	}
+
+	/**
+	 * 设置每秒发送字节数
+	 * 
+	 * @param sentBytesPerSecond
+	 *            每秒发送字节数
+	 */
+	public void setSentBytesPerSecond(String sentBytesPerSecond) {
+		if (sentBytesPerSecond != null && sentBytesPerSecond.isEmpty() == false) {
+			this.sentBytesPerSecond = Float.parseFloat(sentBytesPerSecond);
+		}
 	}
 }
